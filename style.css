@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', sans-serif;
+  background: linear-gradient(180deg, #b3e5fc, #e1f5fe);
+  color: #0d47a1;
+  text-align: center;
+  overflow: hidden;
+  cursor: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #01579b;
+  text-shadow: 2px 2px 0 #ffffff;
+  margin-bottom: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+#question-box {
+  background: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px 30px;
+  width: 80%;
+  max-width: 600px;
+  animation: popIn 0.5s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+#question {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+ul li {
+  background: #4fc3f7;
+  color: #fff;
+  border-radius: 10px;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 1.2em;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  background: #0288d1;
+}
+
+.timer-box {
+  font-size: 1.3em;
+  background: #81d4fa;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+#next-btn {
+  margin-top: 25px;
+  background: #0288d1;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#next-btn:hover {
+  background: #0277bd;
+  transform: scale(1.05);
+}
+
+.note {
+  font-size: 1.1em;
+  color: #01579b;
+  margin-bottom: 10px;
+}
